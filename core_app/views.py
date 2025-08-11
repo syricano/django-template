@@ -21,12 +21,6 @@ def signup(request):
         form = UserCreationForm()
     return render(request, "auth/signup.html", {"form": form})
 
-def login(request):
-    return render(request, "auth/login.html")
-
-def logout(request):
-    return render(request, "auth/logout.html")
-
 @login_required
 def profile(request):
     return render(request, "auth/profile.html")
