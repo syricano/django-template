@@ -40,6 +40,8 @@ AUTHENTICATION_BACKENDS = [
 LOGIN_REDIRECT_URL = "/profile/"
 LOGOUT_REDIRECT_URL = "/"
 ACCOUNT_LOGOUT_REDIRECT_URL = "/"
+ACCOUNT_LOGOUT_ON_GET = True
+MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
 # Allauth account settings
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"   # allow username or email login
@@ -141,7 +143,5 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-# Message storage
-MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
