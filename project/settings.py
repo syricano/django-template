@@ -37,7 +37,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # Redirects
-LOGIN_REDIRECT_URL = "/profile/"
+LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 ACCOUNT_LOGOUT_REDIRECT_URL = "/"
 ACCOUNT_LOGOUT_ON_GET = True
@@ -65,7 +65,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
 
     # Your apps
-    'core_app',
+    'home',
 ]
 
 # Middleware

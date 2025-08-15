@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="{% static 'css/toast.css' %}">
 </head>
 <body>
-  {% include "partials/navbar.html" %}
+  <header>
+    {% include "includes/navbar.html" %}
+  </header>
 
   <!-- live region for announcements -->
   <aside aria-live="polite" aria-atomic="true">
@@ -20,7 +22,9 @@
     {% block content %}{% endblock %}
   </main>
 
-  {% include "partials/footer.html" %}
+  <footer>
+    {% include "includes/footer.html" %}
+  </footer>
 
   <!-- messages payload -->
   <script id="django-messages" type="application/json">
